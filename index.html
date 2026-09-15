@@ -1,82 +1,166 @@
 <!-- HEADER / NAVIGATION -->
-<header class="site-header">
-  <div class="logo">
-    <a href="index.html">
-      <img src="assets/logo.svg" alt="Instant Ugen Logo" />
-    </a>
-  </div>
-  <nav class="main-nav">
-    <ul>
-      <li><a href="upload.html" class="nav-link">Del dine instants</a></li>
-      <li><a href="vindere.html" class="nav-link">Tidligere vindere</a></li>
-      <li><a href="om-os.html" class="nav-link">Om os</a></li>
-    </ul>
-  </nav>
-</header>
+<!doctype html>
+<html>
+  <head>
+    <title>Instant Ugen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
 
-<!-- HERO SECTION -->
-<main>
-  <section class="hero-section">
-    <!-- Venstre side: Tekst & CTA -->
-    <div class="hero-content">
-      <h1 class="hero-title">INSTANT UGEN</h1>
-      <p class="hero-subtitle">
-        Kom og vær med til at dele instant fotos!<br />
-        <strong>Uge 42 - d. 12 - d.18 oktober.</strong>
-      </p>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/generel.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <header class="site-header">
+    <div class="logo">
+      <a href="index.html">
+        <img src="/img/opdateret-logo.png" alt="Instant Ugen Logo" />
+      </a>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li>
+          <a href="del-dine-instants.html" class="nav-link"
+            >Del dine instants</a
+          >
+        </li>
+        <li>
+          <a href="tidligere-vindere.html" class="nav-link"
+            >Tidligere vindere</a
+          >
+        </li>
+        <li><a href="om-os.html" class="nav-link">Om os</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      <div class="hero-cta-wrapper">
-        <div class="cta-box">
-          <button class="btn-primary">DEL EVENTET</button>
+  <!-- HERO SECTION -->
+  <main>
+    <section class="hero-section">
+      <!-- Venstre side: Tekst & CTA -->
+      <div class="hero-content">
+        <h1 class="hero-title">INSTANT UGEN</h1>
+        <p class="hero-subtitle">
+          Kom og vær med til at dele instant fotos!<br />
+          <strong>Uge 42 - d. 12 - d.18 oktober.</strong>
+        </p>
 
-          <div class="speech-bubble">
-            Klik på knappen for at dele dette event med familie og venner!
+        <div class="hero-cta-wrapper">
+          <div class="cta-box">
+            <button class="btn-primary">DEL EVENTET</button>
+
+            <div class="speech-bubble">
+              Klik på knappen for at dele dette event med familie og venner!
+            </div>
+          </div>
+
+          <div class="mascot-wrapper">
+            <img
+              src="img/mascot.svg"
+              alt="Instant Ugen Kamera Maskot"
+              class="mascot-img"
+            />
           </div>
         </div>
-
-        <div class="mascot-wrapper">
-          <img
-            src="assets/mascot-camera.svg"
-            alt="Instant Ugen Kamera Maskot"
-            class="mascot-img"
-          />
-        </div>
-      </div>
-    </div>
-
-    <!-- Højre side: Polaroid-kort (Overlay & Rotation) -->
-    <div class="hero-polaroids">
-      <!-- Polaroid 1 (Nederst til venstre) -->
-      <div class="polaroid-card card-1">
-        <div class="polaroid-img-wrapper">
-          <img src="assets/photo1.jpg" alt="Instant foto af siv" />
-        </div>
-        <p class="polaroid-caption">Navn: Stefan Grage</p>
       </div>
 
-      <!-- Polaroid 2 (Midten) -->
-      <div class="polaroid-card card-2">
-        <div class="polaroid-img-wrapper">
-          <img src="assets/photo2.jpg" alt="Instant foto af badebro" />
+      <!-- Højre side: Polaroid-kort (Overlay & Rotation) -->
+      <div class="hero-polaroids">
+        <!-- Polaroid 1 (Nederst til venstre) -->
+        <div class="polaroid-card card-1">
+          <div class="polaroid-img-wrapper">
+            <img src="img/poloraid-korn.png" alt="Instant foto af siv" />
+          </div>
+          <p class="polaroid-caption">Navn: Stefan Grage</p>
         </div>
-        <p class="polaroid-caption">Navn: Stefan Grage</p>
-      </div>
 
-      <!-- Polaroid 3 (Højre stor) -->
-      <div class="polaroid-card card-3">
-        <div class="polaroid-img-wrapper">
-          <img src="assets/photo3.jpg" alt="Instant foto af CopenHill" />
+        <!-- Polaroid 2 (Midten) -->
+        <div class="polaroid-card card-2">
+          <div class="polaroid-img-wrapper">
+            <img src="img/poloraid-badebro.png" alt="Instant foto af badebro" />
+          </div>
+          <p class="polaroid-caption">Navn: Stefan Grage</p>
         </div>
-        <p class="polaroid-caption">Navn: Stefan Grage</p>
-      </div>
 
-      <!-- Polaroid 4 (Øverst bagved) -->
-      <div class="polaroid-card card-4">
-        <div class="polaroid-img-wrapper">
-          <img src="assets/photo4.jpg" alt="Instant foto" />
+        <!-- Polaroid 3 (Højre stor) -->
+        <div class="polaroid-card card-3">
+          <div class="polaroid-img-wrapper">
+            <img
+              src="img/poloraid-amager-forbaendigen.png"
+              alt="Instant foto af CopenHill"
+            />
+          </div>
+          <p class="polaroid-caption">Navn: Stefan Grage</p>
         </div>
-        <p class="polaroid-caption">Navn: Stefan Grage</p>
+
+        <!-- Polaroid 4 (Øverst bagved) -->
+        <div class="polaroid-card card-4">
+          <div class="polaroid-img-wrapper">
+            <img src="img/poloraid-sten.png" alt="Instant foto" />
+          </div>
+          <p class="polaroid-caption">Navn: Stefan Grage</p>
+        </div>
       </div>
-    </div>
-  </section>
-</main>
+    </section>
+    <!-- BANNER SECTION -->
+    <section class="info-banner">
+      <p>
+        EN UGE DEDIKERET TIL GODE GAMMELDAGS ANALOG FOTOGRAFIER - EFTERÅRET
+        2026: UGE 42, FRA D. 12. TIL DEN 18. OKTOBER.
+      </p>
+    </section>
+
+    <!-- TEKST SEKTION 1 (Venstrejusteret) -->
+    <section class="info-section text-left">
+      <div class="content-container">
+        <h2>Hvad er Instant Ugen?</h2>
+        <p>
+          Kort fortalt er Instant Ugen en hyldest til instant-fotografering; En
+          opfordring til at udforske instant-fotografiets glæder. Instant Ugen
+          foregår to gange årligt: I påsken og efteråret. Så find dit Polaroid-,
+          Instax- eller hvilket som helst andet instant-kamera, frem, og vis os
+          dine instants. Instant Ugen er ikke rigtig en fotokonkurrence, det er
+          mere en hyldest til god gammeldags analog instant-fotografering -
+          alle, der deltager, er vindere :-) Men: Vi har en flot præmie til én
+          heldig instant-fotograf!
+        </p>
+        <p class="highlight-text">
+          Næste Instant Uge løber af staben i uge 42 - d. 12. til den 18.
+          oktober 2026.
+        </p>
+      </div>
+    </section>
+
+    <!-- TEKST SEKTION 2 (Højrejusteret) -->
+    <section class="info-section text-right">
+      <div class="content-container">
+        <h2>Hvorfor instant foto?</h2>
+        <p>
+          Instant foto er et vidnesbyrd om livet. Det hele startede tilbage i
+          1940'erne. Edwin Land fotograferede livets begivenheder, og en dag på
+          stranden med sin 3-årige datter, gjorde hun opmærksom på, at hun ville
+          se billederne med det samme! Edwin satte sig selv en stor opgave: At
+          opfinde en film, der kunne fremkalde sig selv. Hurtigt.
+        </p>
+        <p>
+          Et halvt årti senere etablerede Edwin Land virksomheden Polaroid, som
+          nu om dage nærmest er synonymt med Instant foto. Instant foto blev til
+          en omfattende forretning i 70'erne og 80'erne, indtil den digitale æra
+          næsten slog hele branchen ihjel. Nu er instant foto stærkt på vej
+          tilbage: Den enorme mængde tid spildt bag skærme har ansporet en
+          modreaktion: Analoge, offline oplevelser er blevet populære igen. Og
+          instant foto er netop det: En analog, livsbekræftende og taktil
+          fotooplevelse. Så lad os fejre livet og skabe minder :-)
+        </p>
+      </div>
+    </section>
+  </main>
+</html>

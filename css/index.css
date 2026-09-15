@@ -1,0 +1,190 @@
+main {
+  padding: 2rem;
+}
+
+.hero-section {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  align-items: center;
+  min-height: calc(100vh - 86px);
+  gap: 2rem;
+  padding: 2rem;
+  background: var(--bg-hero-gradient);
+}
+
+.hero-content {
+  max-width: 620px;
+}
+
+.hero-title {
+  margin: 0 0 1rem;
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  line-height: 0.95;
+  letter-spacing: 0.06em;
+}
+
+.hero-subtitle {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.hero-cta-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.cta-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.btn-primary {
+  appearance: none;
+  border: none;
+  border-radius: 18px;
+  background: var(--btn-primary-bg);
+  color: var(--text-primary);
+  font: inherit;
+  font-weight: 700;
+  padding: 0.9rem 1.8rem;
+  box-shadow: var(--shadow-btn);
+  cursor: pointer;
+}
+
+.speech-bubble {
+  max-width: 300px;
+  background: var(--bubble-bg);
+  border: 2px solid var(--bubble-border);
+  border-radius: 18px;
+  padding: 0.9rem 1rem;
+  line-height: 1.4;
+  box-shadow: var(--shadow-btn);
+}
+
+.mascot-wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+
+.mascot-img {
+  width: min(240px, 40vw);
+  height: auto;
+}
+
+.hero-polaroids {
+  position: relative;
+  min-height: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.polaroid-card {
+  position: absolute;
+  width: 220px;
+  background: var(--polaroid-bg);
+  padding: 0.8rem 0.8rem 0.9rem;
+  box-shadow: var(--shadow-polaroid);
+  transform-origin: center;
+}
+
+.polaroid-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.polaroid-caption {
+  margin: 0.75rem 0 0;
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.card-1 {
+  left: 10%;
+  bottom: 8%;
+  transform: rotate(-8deg);
+}
+
+.card-2 {
+  left: 36%;
+  top: 12%;
+  transform: rotate(8deg);
+}
+
+.card-3 {
+  right: 10%;
+  top: 8%;
+  transform: rotate(12deg);
+}
+
+.card-4 {
+  right: 28%;
+  bottom: 10%;
+  transform: rotate(-12deg);
+}
+/* --- BANNER --- */
+.info-banner {
+  background-color: #dbebe8; /* Lys pastelblå tone fra billedet */
+  padding: 16px 20px;
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.info-banner p {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: var(--text-primary);
+  text-transform: uppercase;
+}
+
+/* --- TEKST SEKTIONER --- */
+.info-section {
+  background-color: #fffdfa; /* Lys creme baggrund */
+  padding: 80px 40px;
+}
+
+.content-container {
+  max-width: 650px; /* Sikrer en god læsebredde på teksten */
+}
+
+.info-section h2 {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.info-section p {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.highlight-text {
+  margin-top: 24px;
+  font-weight: 600;
+}
+
+/* Alignment til venstre og højre */
+.text-left .content-container {
+  margin-left: 10%;
+  margin-right: auto;
+}
+
+.text-right .content-container {
+  margin-left: auto;
+  margin-right: 10%;
+}
