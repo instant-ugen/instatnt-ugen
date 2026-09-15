@@ -1,14 +1,15 @@
 main {
-  padding: 2rem;
+  padding: 0; /* Fjernet padding så hero rammer kanterne rent */
 }
 
+/* --- HERO SECTION --- */
 .hero-section {
   display: grid;
   grid-template-columns: 1.15fr 1fr;
   align-items: center;
   min-height: calc(100vh - 86px);
   gap: 2rem;
-  padding: 2rem;
+  padding: 2rem 4rem;
   background: var(--bg-hero-gradient);
 }
 
@@ -76,6 +77,7 @@ main {
   height: auto;
 }
 
+/* Hero Polaroid-kort (Absolut placering) */
 .hero-polaroids {
   position: relative;
   min-height: 480px;
@@ -84,22 +86,22 @@ main {
   align-items: center;
 }
 
-.polaroid-card {
+.hero-polaroids .polaroid-card {
   position: absolute;
   width: 220px;
-  background: var(--polaroid-bg);
+  background: var(--polaroid-bg, #fff);
   padding: 0.8rem 0.8rem 0.9rem;
-  box-shadow: var(--shadow-polaroid);
+  box-shadow: var(--shadow-polaroid, 0 4px 12px rgba(0, 0, 0, 0.15));
   transform-origin: center;
 }
 
-.polaroid-card img {
+.hero-polaroids .polaroid-card img {
   width: 100%;
   height: 220px;
   object-fit: cover;
 }
 
-.polaroid-caption {
+.hero-polaroids .polaroid-caption {
   margin: 0.75rem 0 0;
   text-align: center;
   font-size: 0.85rem;
@@ -129,9 +131,10 @@ main {
   bottom: 10%;
   transform: rotate(-12deg);
 }
+
 /* --- BANNER --- */
 .info-banner {
-  background-color: #dbebe8; /* Lys pastelblå tone fra billedet */
+  background-color: #dbebe8;
   padding: 16px 20px;
   text-align: center;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
@@ -149,12 +152,12 @@ main {
 
 /* --- TEKST SEKTIONER --- */
 .info-section {
-  background-color: #fffdfa; /* Lys creme baggrund */
+  background-color: #f1f0e6;
   padding: 80px 40px;
 }
 
 .content-container {
-  max-width: 650px; /* Sikrer en god læsebredde på teksten */
+  max-width: 650px;
 }
 
 .info-section h2 {
@@ -178,7 +181,6 @@ main {
   font-weight: 600;
 }
 
-/* Alignment til venstre og højre */
 .text-left .content-container {
   margin-left: 10%;
   margin-right: auto;
@@ -187,4 +189,298 @@ main {
 .text-right .content-container {
   margin-left: auto;
   margin-right: 10%;
+}
+
+/* --- SÅDAN DELTAGER DU SEKTION --- */
+.participate-section {
+  background-color: #f1f0e6;
+  padding: 80px 40px;
+}
+
+.participate-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.participate-container h2 {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  margin-bottom: 40px;
+  font-weight: normal;
+}
+
+.step-item {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 35px;
+  align-items: flex-start;
+}
+
+.step-icon img {
+  width: 90px;
+  height: auto;
+  display: block;
+}
+
+.step-text h3 {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.step-text p {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text-primary);
+}
+
+.participate-cta-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.mascot-speech-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.participate-mascot {
+  width: 120px;
+  height: auto;
+}
+
+.speech-bubble-right {
+  background: #f4f0eb;
+  border-radius: 12px;
+  padding: 14px 18px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  max-width: 180px;
+  box-shadow: var(--shadow-btn);
+  position: relative;
+}
+
+.speech-bubble-right::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 8px 8px 8px 0;
+  border-style: solid;
+  border-color: transparent #f4f0eb transparent transparent;
+}
+
+.arrow-decoration {
+  margin: 10px 0 20px 0;
+}
+
+.btn-cyan {
+  display: inline-block;
+  background-color: #9ee0df;
+  color: var(--text-primary);
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 18px 36px;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.btn-cyan:hover {
+  transform: translateY(-2px);
+  background-color: #8bd4d3;
+}
+
+/* --- INSPIRATION SEKTION --- */
+.inspiration-section {
+  background-color: #f1f0e6;
+  padding: 80px 40px 120px 40px;
+}
+
+.inspiration-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.mascot-speech-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.gallery-mascot {
+  width: 90px;
+  height: auto;
+}
+
+.speech-bubble-left {
+  background: #f4f0eb;
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  max-width: 180px;
+  box-shadow: var(--shadow-btn);
+  position: relative;
+}
+
+.speech-bubble-left::after {
+  content: "";
+  position: absolute;
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 8px 0 8px 8px;
+  border-style: solid;
+  border-color: transparent transparent transparent #f4f0eb;
+}
+
+/* 2x2 MINI GRID FOR POLAROIDS */
+.polaroid-mini-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  justify-items: center;
+  padding: 10px;
+}
+
+.polaroid-mini-grid .polaroid-card {
+  background: #fff;
+  padding: 12px 12px 16px 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease;
+  width: 100%;
+  max-width: 200px;
+}
+
+.polaroid-mini-grid .polaroid-card:hover {
+  transform: scale(1.05) rotate(0deg) !important;
+  z-index: 5;
+}
+
+.polaroid-mini-grid .polaroid-inner img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+.polaroid-mini-grid .polaroid-caption {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: #666;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Roteringsvinkler til Polaroid-kortene */
+.tilt-left {
+  transform: rotate(-4deg);
+}
+
+.tilt-right {
+  transform: rotate(5deg);
+}
+
+/* --- HØJRE SIDE: TEXT & ACCORDIONS --- */
+.inspiration-text-side h2 {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.inspiration-intro {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  margin-bottom: 30px;
+}
+
+.accordion-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.accordion-item {
+  background-color: #9ee0df;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.accordion-header {
+  padding: 16px 20px;
+  font-family: var(--font-body);
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--text-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  list-style: none;
+}
+
+.accordion-header::-webkit-details-marker {
+  display: none;
+}
+
+.accordion-arrow {
+  font-size: 0.75rem;
+  transition: transform 0.2s ease;
+}
+
+.accordion-item[open] .accordion-arrow {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  background-color: #e6f6f5;
+  padding: 16px 20px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text-primary);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.accordion-content a {
+  color: var(--text-primary);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.accordion-content a:hover {
+  opacity: 0.8;
 }

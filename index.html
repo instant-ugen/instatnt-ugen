@@ -1,166 +1,456 @@
-<!-- HEADER / NAVIGATION -->
 <!doctype html>
-<html>
+<html lang="da">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Instant Ugen</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- CSS Filer -->
     <link rel="stylesheet" href="css/generel.css" />
     <link rel="stylesheet" href="css/index.css" />
   </head>
-  <header class="site-header">
-    <div class="logo">
-      <a href="index.html">
-        <img src="/img/opdateret-logo.png" alt="Instant Ugen Logo" />
-      </a>
-    </div>
-    <nav class="main-nav">
-      <ul>
-        <li>
-          <a href="del-dine-instants.html" class="nav-link"
-            >Del dine instants</a
-          >
-        </li>
-        <li>
-          <a href="tidligere-vindere.html" class="nav-link"
-            >Tidligere vindere</a
-          >
-        </li>
-        <li><a href="om-os.html" class="nav-link">Om os</a></li>
-      </ul>
-    </nav>
-  </header>
+  <body>
+    <!-- HEADER / NAVIGATION -->
+    <header class="site-header">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/opdateret-logo.png" alt="Instant Ugen Logo" />
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li>
+            <a href="del-dine-instants.html" class="nav-link"
+              >Del dine instants</a
+            >
+          </li>
+          <li>
+            <a href="tidligere-vindere.html" class="nav-link"
+              >Tidligere vindere</a
+            >
+          </li>
+          <li><a href="om-os.html" class="nav-link">Om os</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- HERO SECTION -->
-  <main>
-    <section class="hero-section">
-      <!-- Venstre side: Tekst & CTA -->
-      <div class="hero-content">
-        <h1 class="hero-title">INSTANT UGEN</h1>
-        <p class="hero-subtitle">
-          Kom og vær med til at dele instant fotos!<br />
-          <strong>Uge 42 - d. 12 - d.18 oktober.</strong>
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero-section">
+        <!-- Venstre side: Tekst & CTA -->
+        <div class="hero-content">
+          <h1 class="hero-title">INSTANT UGEN</h1>
+          <p class="hero-subtitle">
+            Kom og vær med til at dele instant fotos!<br />
+            <strong>Uge 42 - d. 12 - d.18 oktober.</strong>
+          </p>
+
+          <div class="hero-cta-wrapper">
+            <div class="cta-box">
+              <button class="btn-primary">DEL EVENTET</button>
+
+              <div class="speech-bubble">
+                Klik på knappen for at dele dette event med familie og venner!
+              </div>
+            </div>
+
+            <div class="mascot-wrapper">
+              <img
+                src="img/mascot.svg"
+                alt="Instant Ugen Kamera Maskot"
+                class="mascot-img"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Højre side: Polaroid-kort (Overlay & Rotation) -->
+        <div class="hero-polaroids">
+          <!-- Polaroid 1 (Nederst til venstre) -->
+          <div class="polaroid-card card-1">
+            <div class="polaroid-img-wrapper">
+              <img src="img/poloraid-korn.png" alt="Instant foto af siv" />
+            </div>
+            <p class="polaroid-caption">Navn: Stefan Grage</p>
+          </div>
+
+          <!-- Polaroid 2 (Midten) -->
+          <div class="polaroid-card card-2">
+            <div class="polaroid-img-wrapper">
+              <img
+                src="img/poloraid-badebro.png"
+                alt="Instant foto af badebro"
+              />
+            </div>
+            <p class="polaroid-caption">Navn: Stefan Grage</p>
+          </div>
+
+          <!-- Polaroid 3 (Højre stor) -->
+          <div class="polaroid-card card-3">
+            <div class="polaroid-img-wrapper">
+              <img
+                src="img/poloraid-amager-forbaendigen.png"
+                alt="Instant foto af CopenHill"
+              />
+            </div>
+            <p class="polaroid-caption">Navn: Stefan Grage</p>
+          </div>
+
+          <!-- Polaroid 4 (Øverst bagved) -->
+          <div class="polaroid-card card-4">
+            <div class="polaroid-img-wrapper">
+              <img src="img/poloraid-sten.png" alt="Instant foto" />
+            </div>
+            <p class="polaroid-caption">Navn: Stefan Grage</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- BANNER SECTION -->
+      <section class="info-banner">
+        <p>
+          EN UGE DEDIKERET TIL GODE GAMMELDAGS ANALOG FOTOGRAFIER - EFTERÅRET
+          2026: UGE 42, FRA D. 12. TIL DEN 18. OKTOBER.
         </p>
+      </section>
 
-        <div class="hero-cta-wrapper">
-          <div class="cta-box">
-            <button class="btn-primary">DEL EVENTET</button>
+      <!-- TEKST SEKTION 1 (Venstrejusteret) -->
+      <section class="info-section text-left">
+        <div class="content-container">
+          <h2>Hvad er Instant Ugen?</h2>
+          <p>
+            Kort fortalt er Instant Ugen en hyldest til instant-fotografering;
+            En opfordring til at udforske instant-fotografiets glæder. Instant
+            Ugen foregår to gange årligt: I påsken og efteråret. Så find dit
+            Polaroid-, Instax- eller hvilket som helst andet instant-kamera,
+            frem, og vis os dine instants. Instant Ugen er ikke rigtig en
+            fotokonkurrence, det er mere en hyldest til god gammeldags analog
+            instant-fotografering - alle, der deltager, er vindere :-) Men: Vi
+            har en flot præmie til én heldig instant-fotograf!
+          </p>
+          <p class="highlight-text">
+            Næste Instant Uge løber af staben i uge 42 - d. 12. til den 18.
+            oktober 2026.
+          </p>
+        </div>
+      </section>
 
-            <div class="speech-bubble">
-              Klik på knappen for at dele dette event med familie og venner!
+      <!-- TEKST SEKTION 2 (Højrejusteret) -->
+      <section class="info-section text-right">
+        <div class="content-container">
+          <h2>Hvorfor instant foto?</h2>
+          <p>
+            Instant foto er et vidnesbyrd om livet. Det hele startede tilbage i
+            1940'erne. Edwin Land fotograferede livets begivenheder, og en dag
+            på stranden med sin 3-årige datter, gjorde hun opmærksom på, at hun
+            ville se billederne med det samme! Edwin satte sig selv en stor
+            opgave: At opfinde en film, der kunne fremkalde sig selv. Hurtigt.
+          </p>
+          <p>
+            Et halvt årti senere etablerede Edwin Land virksomheden Polaroid,
+            som nu om dage nærmest er synonymt med Instant foto. Instant foto
+            blev til en omfattende forretning i 70'erne og 80'erne, indtil den
+            digitale æra næsten slog hele branchen ihjel. Nu er instant foto
+            stærkt på vej tilbage: Den enorme mængde tid spildt bag skærme har
+            ansporet en modreaktion: Analoge, offline oplevelser er blevet
+            populære igen. Og instant foto er netop det: En analog,
+            livsbekræftende og taktil fotooplevelse. Så lad os fejre livet og
+            skabe minder :-)
+          </p>
+        </div>
+      </section>
+
+      <!-- SÅDAN DELTAGER DU SEKTION -->
+      <section class="participate-section">
+        <div class="participate-container">
+          <!-- Venstre side: Trin-for-trin guide -->
+          <div class="steps-wrapper">
+            <h2>Sådan deltager du</h2>
+
+            <div class="step-item">
+              <div class="step-icon">
+                <img src="img/instruktion-1.svg" alt="Tag et billede ikon" />
+              </div>
+              <div class="step-text">
+                <h3>1. Tag et billede</h3>
+                <p>
+                  Tag et billede af dit instant foto med din smartphone (eller
+                  scan det for en bedre kvalitet) - filen skal være mellem 2-10
+                  MB, i jpg/jpeg - eller webp-format.
+                </p>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <div class="step-icon">
+                <img src="img/instruktion2.svg" alt="Upload billede ikon" />
+              </div>
+              <div class="step-text">
+                <h3>2. Upload dit billede + info</h3>
+                <p>
+                  Upload dit billede og dit navn + kontaktinfo på "Del dine
+                  instants"-siden.
+                </p>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <div class="step-icon">
+                <img src="img/instruktion3.svg" alt="Accepter vilkår ikon" />
+              </div>
+              <div class="step-text">
+                <h3>3. Accepter vilkår og betingelser</h3>
+                <p>
+                  Accepter vilkår og betingelser for konkurrencen, som du kan
+                  finde i bunden af formularen, på siden "del dine
+                  instants"-siden. (Kort sagt: Deltagere skal være over 18 år,
+                  portrætterede personer skal have givet samtykke, og du
+                  accepterer, at dit instant foto må udstilles og bruges til at
+                  promovere fotokonkurrencen.)
+                </p>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <div class="step-icon">
+                <img src="img/instruktion4.svg" alt="Max 5 bidrag ikon" />
+              </div>
+              <div class="step-text">
+                <h3>4. Max 5 bidrag</h3>
+                <p>
+                  Du kan indsende op til 5 bidrag - gennemgå trin 1-3 for hver
+                  indsendelse ;-)
+                </p>
+              </div>
             </div>
           </div>
 
-          <div class="mascot-wrapper">
-            <img
-              src="img/mascot.svg"
-              alt="Instant Ugen Kamera Maskot"
-              class="mascot-img"
-            />
+          <!-- Højre side: Maskot & CTA -->
+          <div class="participate-cta-side">
+            <div class="mascot-speech-container">
+              <img
+                src="img/mascot.svg"
+                alt="Instant Ugen Kamera Maskot"
+                class="participate-mascot"
+              />
+              <div class="speech-bubble-right">
+                Klik på knappen for at indsende dine egne instant fotos
+              </div>
+            </div>
+
+            <div class="arrow-decoration">
+              <img src="img/arrow-down.svg" alt="Prikket pil ned" />
+            </div>
+
+            <a href="del-dine-instants.html" class="btn-cyan"
+              >DEL DINE INSTANTS</a
+            >
           </div>
+        </div>
+      </section>
+
+      <!-- INSPIRATION & GALLERI SEKTION -->
+      <section class="inspiration-section">
+        <div class="inspiration-container">
+          <!-- Venstre side: Polaroid 2x2 grid -->
+          <div class="photo-gallery-side">
+            <div class="mascot-speech-top">
+              <div class="speech-bubble-left">
+                Tag et kig på følgende instant fotos for inspiration
+              </div>
+              <img
+                src="img/mascot.svg"
+                alt="Instant Ugen Kamera Maskot"
+                class="gallery-mascot"
+              />
+            </div>
+
+            <!-- 2x2 Polaroid Grid -->
+            <div class="polaroid-mini-grid">
+              <div class="polaroid-card tilt-left">
+                <div class="polaroid-inner">
+                  <img src="img/poloraid-legetøj.png" alt="Instant foto 1" />
+                  <span class="polaroid-caption">Navn: Stefan Grage</span>
+                </div>
+              </div>
+              <div class="polaroid-card tilt-right">
+                <div class="polaroid-inner">
+                  <img src="img/poloraid-badebro.png" alt="Instant foto 2" />
+                  <span class="polaroid-caption">Navn: Stefan Grage</span>
+                </div>
+              </div>
+              <div class="polaroid-card tilt-right">
+                <div class="polaroid-inner">
+                  <img src="img/poloraid-haven.png" alt="Instant foto 3" />
+                  <span class="polaroid-caption">Navn: Stefan Grage</span>
+                </div>
+              </div>
+              <div class="polaroid-card tilt-left">
+                <div class="polaroid-inner">
+                  <img src="img/poloraid-kalkgrav.png" alt="Instant foto 4" />
+                  <span class="polaroid-caption">Navn: Stefan Grage</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Højre side: Inspiration Tekst & Accordions -->
+          <div class="inspiration-text-side">
+            <h2>Inspiration</h2>
+            <p class="inspiration-intro">
+              Du kan også få en masse inspiration fra kunstfotografi-scenen.
+              Hvis du er interesseret i at få lidt ekstra inspiration kan du
+              åbne nedenstående fold-ud menuer, for at få mere information samt
+              links.
+            </p>
+
+            <div class="accordion-group">
+              <details class="accordion-item">
+                <summary class="accordion-header">
+                  <span>DAN ISAAC WALLIN</span>
+                  <span class="accordion-arrow">▼</span>
+                </summary>
+                <div class="accordion-content">
+                  <p>
+                    Dan Isaac Wallin er en svensk kunstfotograf, der bruger
+                    storformatkameraer og vintage polaroidkameraer til sine
+                    værker. Hans værker hænger også i adskillige huse som
+                    plakater.
+                  </p>
+                  <p>
+                    <a
+                      href="https://www.danisaacwallin.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Besøg Dan Isaac Wallins hjemmeside</a
+                    >
+                  </p>
+                </div>
+              </details>
+
+              <details class="accordion-item">
+                <summary class="accordion-header">
+                  <span>METTE KELTER</span>
+                  <span class="accordion-arrow">▼</span>
+                </summary>
+                <div class="accordion-content">
+                  <p>
+                    Mette Kelter er en dansk kunstfotograf, der ofte
+                    eksperimenterer med bevidst ødelæggelse af den kemiske
+                    proces i instant-fotos. Et af nøgleordene her er
+                    uforudsigelighed i arbejdsprocessen, hvilket fører til
+                    interessante og unikke kunstværker.
+                  </p>
+                  <p>
+                    <a
+                      href="https://www.kelterphotography.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Besøg Mette Kelters hjemmeside</a
+                    >
+                  </p>
+                </div>
+              </details>
+
+              <details class="accordion-item">
+                <summary class="accordion-header">
+                  <span>MARIPOL</span>
+                  <span class="accordion-arrow">▼</span>
+                </summary>
+                <div class="accordion-content">
+                  <p>
+                    Maripol er en fransk kunstner/fotograf/filmproducer. Hun
+                    blev berømt i 1980'erne, hvor hun fotograferede berømte
+                    personer med et Polaroid SX-70. Hendes fotografier er stadig
+                    meget indflydelsesrige i modebranchen.
+                  </p>
+                  <p>
+                    <a
+                      href="https://en.wikipedia.org/wiki/Maripol"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Læs mere om Maripol på Wikipedia</a
+                    >
+                  </p>
+                </div>
+              </details>
+
+              <details class="accordion-item">
+                <summary class="accordion-header">
+                  <span>THE POLAROID COLLECTION</span>
+                  <span class="accordion-arrow">▼</span>
+                </summary>
+                <div class="accordion-content">
+                  <p>
+                    The Polaroid Collection var en stor samling instant fotos
+                    samlet af Polaroid Corporation. Den indeholdt værker fra en
+                    række berømte fotografer, herunder eksempelvis Ansel Adams.
+                    Samlingen blev splittet op i forskellige dele og sat på
+                    auktion, da Polaroid Corporation gik konkurs i 2008.
+                    Heldigvis kan man finde bøger med fotografier fra samlingen,
+                    for eksempel Polaroidbogen af Steve Crist og Barbara
+                    Hitchcock.
+                  </p>
+                  <p>
+                    <a
+                      href="https://www.taschen.com/en/books/photography/40752/the-polaroid-book-45th-ed/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Se bogen hos Taschen</a
+                    >
+                  </p>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- GLOBAL FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- Logo kolonne -->
+        <div class="footer-logo">
+          <img src="img/opdateret-logo.png" alt="Instant Ugen logo" />
+        </div>
+
+        <!-- Navigation -->
+        <div class="footer-col">
+          <h3>Navigation:</h3>
+          <ul>
+            <li><a href="index.html">Forside</a></li>
+            <li><a href="om-os.html">OM OS</a></li>
+            <li><a href="del-dine-instants.html">Del dine instants</a></li>
+          </ul>
+        </div>
+
+        <!-- Kontakt -->
+        <div class="footer-col">
+          <h3>Kontakt:</h3>
+          <p><a href="tel:+4512345678">+45 12345678</a></p>
+          <p><a href="mailto:instantugen@mail.dk">instantugen@mail.dk</a></p>
+        </div>
+
+        <!-- Adresse -->
+        <div class="footer-col">
+          <h3>Adresse:</h3>
+          <p class="address-line">Møllebakken 27, 3.Th</p>
+          <p class="address-line">2400 København NV</p>
         </div>
       </div>
-
-      <!-- Højre side: Polaroid-kort (Overlay & Rotation) -->
-      <div class="hero-polaroids">
-        <!-- Polaroid 1 (Nederst til venstre) -->
-        <div class="polaroid-card card-1">
-          <div class="polaroid-img-wrapper">
-            <img src="img/poloraid-korn.png" alt="Instant foto af siv" />
-          </div>
-          <p class="polaroid-caption">Navn: Stefan Grage</p>
-        </div>
-
-        <!-- Polaroid 2 (Midten) -->
-        <div class="polaroid-card card-2">
-          <div class="polaroid-img-wrapper">
-            <img src="img/poloraid-badebro.png" alt="Instant foto af badebro" />
-          </div>
-          <p class="polaroid-caption">Navn: Stefan Grage</p>
-        </div>
-
-        <!-- Polaroid 3 (Højre stor) -->
-        <div class="polaroid-card card-3">
-          <div class="polaroid-img-wrapper">
-            <img
-              src="img/poloraid-amager-forbaendigen.png"
-              alt="Instant foto af CopenHill"
-            />
-          </div>
-          <p class="polaroid-caption">Navn: Stefan Grage</p>
-        </div>
-
-        <!-- Polaroid 4 (Øverst bagved) -->
-        <div class="polaroid-card card-4">
-          <div class="polaroid-img-wrapper">
-            <img src="img/poloraid-sten.png" alt="Instant foto" />
-          </div>
-          <p class="polaroid-caption">Navn: Stefan Grage</p>
-        </div>
-      </div>
-    </section>
-    <!-- BANNER SECTION -->
-    <section class="info-banner">
-      <p>
-        EN UGE DEDIKERET TIL GODE GAMMELDAGS ANALOG FOTOGRAFIER - EFTERÅRET
-        2026: UGE 42, FRA D. 12. TIL DEN 18. OKTOBER.
-      </p>
-    </section>
-
-    <!-- TEKST SEKTION 1 (Venstrejusteret) -->
-    <section class="info-section text-left">
-      <div class="content-container">
-        <h2>Hvad er Instant Ugen?</h2>
-        <p>
-          Kort fortalt er Instant Ugen en hyldest til instant-fotografering; En
-          opfordring til at udforske instant-fotografiets glæder. Instant Ugen
-          foregår to gange årligt: I påsken og efteråret. Så find dit Polaroid-,
-          Instax- eller hvilket som helst andet instant-kamera, frem, og vis os
-          dine instants. Instant Ugen er ikke rigtig en fotokonkurrence, det er
-          mere en hyldest til god gammeldags analog instant-fotografering -
-          alle, der deltager, er vindere :-) Men: Vi har en flot præmie til én
-          heldig instant-fotograf!
-        </p>
-        <p class="highlight-text">
-          Næste Instant Uge løber af staben i uge 42 - d. 12. til den 18.
-          oktober 2026.
-        </p>
-      </div>
-    </section>
-
-    <!-- TEKST SEKTION 2 (Højrejusteret) -->
-    <section class="info-section text-right">
-      <div class="content-container">
-        <h2>Hvorfor instant foto?</h2>
-        <p>
-          Instant foto er et vidnesbyrd om livet. Det hele startede tilbage i
-          1940'erne. Edwin Land fotograferede livets begivenheder, og en dag på
-          stranden med sin 3-årige datter, gjorde hun opmærksom på, at hun ville
-          se billederne med det samme! Edwin satte sig selv en stor opgave: At
-          opfinde en film, der kunne fremkalde sig selv. Hurtigt.
-        </p>
-        <p>
-          Et halvt årti senere etablerede Edwin Land virksomheden Polaroid, som
-          nu om dage nærmest er synonymt med Instant foto. Instant foto blev til
-          en omfattende forretning i 70'erne og 80'erne, indtil den digitale æra
-          næsten slog hele branchen ihjel. Nu er instant foto stærkt på vej
-          tilbage: Den enorme mængde tid spildt bag skærme har ansporet en
-          modreaktion: Analoge, offline oplevelser er blevet populære igen. Og
-          instant foto er netop det: En analog, livsbekræftende og taktil
-          fotooplevelse. Så lad os fejre livet og skabe minder :-)
-        </p>
-      </div>
-    </section>
-  </main>
+    </footer>
+  </body>
 </html>
