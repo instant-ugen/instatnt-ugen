@@ -1,0 +1,419 @@
+/* --- TIDLIGERE VINDERE: HERO SEKTION --- */
+.winners-hero-section {
+  width: 100%;
+  padding: 80px 20px;
+  background-color: var(--bg-main, #fbf9f4);
+  box-sizing: border-box;
+}
+
+.winners-hero-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 50px;
+  align-items: center;
+}
+
+/* Tekst styling */
+.winners-hero-text h1 {
+  font-family: "Special Elite", cursive, serif;
+  font-size: 2.8rem;
+  color: var(--text-primary, #2b2b2b);
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.winners-hero-text p {
+  font-family: "Play", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #4a4a4a;
+  margin-bottom: 30px;
+  max-width: 480px;
+}
+
+/* CTA Knap */
+.btn-primary {
+  display: inline-block;
+  background-color: #eba954;
+  color: #ffffff;
+  font-family: "Play", sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #d89643;
+  transform: translateY(-2px);
+}
+
+/* Maskot og Taleboble Flex Opsætning */
+.winners-hero-mascot {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+
+/* Taleboble styling med CSS pil */
+.speech-bubble {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 16px;
+  padding: 14px 18px;
+  max-width: 190px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  position: relative;
+  margin-right: -15px;
+  margin-bottom: 40px;
+  z-index: 2;
+}
+
+.speech-bubble p {
+  font-family: "Play", sans-serif;
+  font-size: 0.88rem;
+  line-height: 1.35;
+  color: #2b2b2b;
+  margin: 0;
+}
+
+/* Pil på taleboblen mod højre */
+.speech-bubble::after {
+  content: "";
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 8px 0 8px 12px;
+  border-style: solid;
+  border-color: transparent transparent transparent #ffffff;
+  z-index: 2;
+}
+
+.speech-bubble::before {
+  content: "";
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 9px 0 9px 13px;
+  border-style: solid;
+  border-color: transparent transparent transparent #000000;
+  z-index: 1;
+}
+
+.mascot-image img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.15));
+}
+
+/* --- GALLERI SEKTION --- */
+.gallery-section {
+  width: 100%;
+  padding: 40px 20px 100px 20px;
+  background-color: var(--bg-main, #fbf9f4);
+  box-sizing: border-box;
+}
+
+.gallery-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px 60px;
+  align-items: start;
+}
+
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.winner-title {
+  font-family: "Special Elite", cursive, serif;
+  font-size: 1.8rem;
+  color: #2b2b2b;
+  margin: 0 0 12px 0;
+  font-weight: normal;
+}
+
+/* Forskudt placering for at matche layoutet */
+.gallery-item.item-2 {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  margin-top: 120px;
+}
+
+/* Polaroid Base Styling */
+.polaroid-card {
+  background-color: #ffffff;
+  padding: 12px 12px 20px 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.polaroid-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+.polaroid-image {
+  overflow: hidden;
+  background-color: #eee;
+}
+
+.polaroid-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Formater */
+.polaroid-image.wide {
+  width: 320px;
+  height: 200px;
+}
+
+.polaroid-image.square {
+  width: 230px;
+  height: 230px;
+}
+
+.polaroid-card.landscape {
+  display: flex;
+  flex-direction: row;
+  padding: 14px 20px 14px 14px;
+  align-items: center;
+}
+
+.polaroid-card.landscape .polaroid-image {
+  width: 320px;
+  height: 230px;
+}
+
+.polaroid-footer {
+  margin-top: 12px;
+  text-align: center;
+  width: 100%;
+}
+
+.polaroid-footer.sideway {
+  margin-top: 0;
+  margin-left: 12px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  text-align: center;
+}
+
+.winner-name {
+  font-family: "Special Elite", cursive, serif;
+  font-size: 1.1rem;
+  color: #2b2b2b;
+  margin: 0;
+}
+
+/* --- TAL FRA I ÅR SEKTION --- */
+.stats-section {
+  width: 100%;
+  padding: 60px 20px 100px 20px;
+  background-color: var(--bg-main, #fbf9f4);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.stats-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.stats-title {
+  font-family: "Special Elite", cursive, serif;
+  font-size: 2.8rem;
+  color: #2b2b2b;
+  margin: 0;
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+.stats-svg-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.stats-svg-wrapper img {
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+  display: block;
+}
+
+.stats-grid {
+  display: flex;
+  align-items: flex-end;
+  gap: 50px;
+}
+
+.stat-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-item img {
+  max-width: 180px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  font-family: "Special Elite", cursive, serif;
+  font-size: 1.2rem;
+  color: #2b2b2b;
+  margin: 0;
+}
+
+.stat-label.subtext {
+  font-size: 0.95rem;
+}
+
+.stat-highlight {
+  font-family: "Special Elite", cursive, serif;
+  font-size: 1.5rem;
+  color: #2b2b2b;
+  margin: 4px 0;
+}
+
+.stat-sublabel {
+  font-family: "Play", sans-serif;
+  font-size: 0.8rem;
+  color: #666666;
+  margin: 0;
+}
+
+/* --- MOBIL RESPONSIVET --- */
+@media (max-width: 900px) {
+  .winners-hero-section {
+    padding: 50px 20px;
+  }
+
+  .winners-hero-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .winners-hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .winners-hero-text p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .winners-hero-mascot {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .speech-bubble {
+    margin-right: 0;
+    margin-top: -20px;
+    margin-bottom: 0;
+    max-width: 240px;
+  }
+
+  .speech-bubble::after,
+  .speech-bubble::before {
+    display: none;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .gallery-item.item-2 {
+    grid-column: 1;
+    grid-row: auto;
+    margin-top: 0;
+  }
+
+  .polaroid-card,
+  .polaroid-card.landscape {
+    flex-direction: column;
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .polaroid-image.wide,
+  .polaroid-image.square,
+  .polaroid-card.landscape .polaroid-image {
+    width: 100%;
+    height: 220px;
+  }
+
+  .polaroid-footer.sideway {
+    writing-mode: horizontal-tb;
+    transform: none;
+    margin-left: 0;
+    margin-top: 12px;
+  }
+
+  .stats-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .stats-title {
+    white-space: normal;
+    font-size: 2.2rem;
+  }
+
+  .stats-svg-wrapper {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .stats-svg-wrapper img {
+    max-width: 100%;
+  }
+
+  .stats-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+}

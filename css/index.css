@@ -1,3 +1,12 @@
+:root {
+  --bg-hero-gradient: linear-gradient(
+    135deg,
+    #cbe2e2 0%,
+    #f9e2b6 50%,
+    #ee9e85 100%
+  );
+}
+
 main {
   padding: 0; /* Fjernet padding så hero rammer kanterne rent */
 }

@@ -1,0 +1,226 @@
+/* --- OM OS: HVEM ER VI SEKTION --- */
+.about-hero-section {
+  width: 100%;
+  padding: 80px 20px;
+  background-color: #f1f0e6;
+  box-sizing: border-box;
+}
+
+.about-hero-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-hero-text h2 {
+  font-family: "Special Elite", cursive, serif;
+  font-size: 2.8rem;
+  color: var(--text-primary, #2b2b2b);
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.about-hero-text p {
+  font-family: "Play", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #4a4a4a;
+}
+
+.about-hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-hero-image img {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  display: block;
+  /* Blød skygge bag maskotten som på skærmbilledet */
+  filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.15));
+}
+
+.judges-section {
+  width: 100%;
+  padding: 60px 20px 100px 20px;
+  background-color: var(--bg-main, #fbf9f4);
+  box-sizing: border-box;
+}
+
+.judges-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.judges-container h2 {
+  font-family: "Special Elite", cursive, serif;
+  font-size: 2.5rem;
+  color: var(--text-primary, #2b2b2b);
+  margin-bottom: 40px;
+  font-weight: normal;
+  text-align: left;
+}
+
+/* Flexbox så de 5 kort fordeler sig pænt (3 øverst, 2 centreret nederst) */
+.judges-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px 30px;
+}
+
+/* Polaroid Kort Styling */
+.judges-grid .polaroid-card {
+  background-color: #ffffff;
+  padding: 16px 16px 24px 16px;
+  width: 280px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.judges-grid .polaroid-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+}
+
+.judges-grid .polaroid-inner {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  margin-bottom: 16px;
+  background-color: #f0f0f0;
+}
+
+.judges-grid .polaroid-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.judges-grid .polaroid-caption {
+  text-align: center;
+  width: 100%;
+}
+
+.judges-grid .polaroid-caption h3 {
+  font-family: "Special Elite", cursive, serif;
+  font-size: 1.15rem;
+  color: #2b2b2b;
+  margin: 0 0 4px 0;
+  font-weight: normal;
+}
+
+.judges-grid .polaroid-caption p {
+  font-family: "Play", sans-serif;
+  font-size: 0.82rem;
+  color: #555555;
+  margin: 0;
+  line-height: 1.35;
+}
+
+.sponsors-section {
+  width: 100%;
+  padding: 60px 20px 100px 20px;
+  background-color: var(--bg-main, #fbf9f4);
+  box-sizing: border-box;
+}
+
+.sponsors-container {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sponsors-container h2 {
+  font-family: "Special Elite", cursive, serif;
+  font-size: 2.5rem;
+  color: var(--text-primary, #2b2b2b);
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.sponsors-container p {
+  font-family: "Play", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #4a4a4a;
+  margin: 0 auto;
+}
+
+/* --- MOBIL RESPONSIVET --- */
+@media (max-width: 768px) {
+  .about-hero-section {
+    padding: 50px 20px;
+  }
+
+  .about-hero-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .about-hero-text h2 {
+    font-size: 2.2rem;
+  }
+
+  .about-hero-text p {
+    font-size: 0.95rem;
+    text-align: left; /* Bevar venstrestillet eller ændr til center hvis du foretrækker det */
+  }
+
+  .about-hero-image img {
+    max-width: 260px;
+  }
+  .judges-section {
+    padding: 40px 16px 60px 16px;
+  }
+
+  .judges-container h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .judges-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .judges-grid .polaroid-card {
+    width: 100%;
+    padding: 10px 10px 16px 10px;
+  }
+
+  .judges-grid .polaroid-caption h3 {
+    font-size: 0.95rem;
+  }
+
+  .judges-grid .polaroid-caption p {
+    font-size: 0.72rem;
+  }
+
+  .sponsors-section {
+    padding: 40px 20px 60px 20px;
+  }
+
+  .sponsors-container h2 {
+    font-size: 2rem;
+  }
+
+  .sponsors-container p {
+    font-size: 0.95rem;
+  }
+}
