@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instant Ugen</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Filer -->
+    <link rel="stylesheet" href="css/generel.css" />
+    <link rel="stylesheet" href="css/del-dine-instants.css" />
+  </head>
+  <body>
+    <!-- HEADER / NAVIGATION -->
+    <header class="site-header">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/opdateret-logo.png" alt="Instant Ugen Logo" />
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li>
+            <a href="del-dine-instants.html" class="nav-link"
+              >Del dine instants</a
+            >
+          </li>
+          <li>
+            <a href="tidligere-vindere.html" class="nav-link"
+              >Tidligere vindere</a
+            >
+          </li>
+          <li><a href="om-os.html" class="nav-link">Om os</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="form-page">
+      <div class="form-header">
+        <h1>Klar til at dele dit instant foto? Sådan deltager du:</h1>
+        <p>
+          Har du et instant foto klar til deling? Upload det i formularen
+          nedenfor her
+        </p>
+      </div>
+
+      <div class="form-card">
+        <form
+          class="upload-form"
+          action="#"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <div class="form-grid">
+            <!-- Fornavn -->
+            <div class="form-group">
+              <label for="firstname"
+                >Fornavn <span class="required">*</span></label
+              >
+              <input type="text" id="firstname" name="firstname" required />
+            </div>
+
+            <!-- Efternavn -->
+            <div class="form-group">
+              <label for="lastname"
+                >Efternavn <span class="required">*</span></label
+              >
+              <input type="text" id="lastname" name="lastname" required />
+            </div>
+
+            <!-- Mail-adresse -->
+            <div class="form-group">
+              <label for="email"
+                >Mail-adresse <span class="required">*</span></label
+              >
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <!-- Tlf nummer -->
+            <div class="form-group">
+              <label for="phone"
+                >Tlf nummer <span class="required">*</span></label
+              >
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+
+            <!-- Titel på dit foto -->
+            <div class="form-group">
+              <label for="photo-title"
+                >Titel på dit foto <span class="required">*</span></label
+              >
+              <input type="text" id="photo-title" name="photo-title" required />
+            </div>
+
+            <!-- Vælg fil -->
+            <div class="form-group">
+              <label for="photo-file"
+                >Vælg fil <span class="required">*</span></label
+              >
+              <div class="file-input-wrapper">
+                <input
+                  type="file"
+                  id="photo-file"
+                  name="photo-file"
+                  accept="image/*"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Beskriv dit foto -->
+            <div class="form-group full-width">
+              <label for="description"
+                >Beskriv dit foto <span class="required">*</span></label
+              >
+              <textarea
+                id="description"
+                name="description"
+                rows="6"
+                required
+              ></textarea>
+            </div>
+          </div>
+
+          <!-- Submit button -->
+          <div class="form-submit-wrapper">
+            <button type="submit" class="btn-submit">INDSEND</button>
+            <p class="terms-text">
+              Ved at trykke indsend bekræfter du samtidig at du har læst og
+              forstået
+              <!-- Ren HTML udløser til dialog -->
+              <button
+                type="button"
+                class="terms-link"
+                onclick="document.getElementById('terms-dialog').showModal()"
+              >
+                vilkår og betingelser
+              </button>
+              for konkurrencen
+            </p>
+          </div>
+        </form>
+      </div>
+
+      <!-- REN HTML DIALOG (POP-UP) -->
+      <dialog id="terms-dialog" class="terms-dialog">
+        <div class="dialog-header">
+          <h2>Vilkår og betingelser</h2>
+          <form method="dialog">
+            <button class="modal-close">&times;</button>
+          </form>
+        </div>
+        <div class="dialog-body">
+          <p>
+            Ved at deltage i konkurrencen accepterer du følgende vilkår og
+            betingelser
+          </p>
+
+          <p>
+            <strong>Instant Foto</strong><br />
+            Hver indsendelse skal være et analogt instant-foto - ikke en digital
+            montage lavet i et fotoredigeringsprogram. Instant-fotoet kan laves
+            på forskellige måder; med analoge instant-kameraer, digitale
+            instant-kameraer som f.eks. Fujifilm EVO eller scan-og-print-udstyr
+            som f.eks. Polaroid Lab. Instant-fotoet må gerne manipuleres med
+            analoge processer - arrangørerne opfordrer til at eksperimentere med
+            instant fotografering. Indsendelsen kan skildre instant-fotoet på
+            mange måder: Som en flad scanning med eller uden instant-rammen, som
+            et foto, der viser instantet i en ramme, på væggen osv.
+            Instant-fotoet behøver ikke kun at være ét foto: Det kan være et
+            panorama eller en collage af flere instants, der udgør én
+            indsendelse. Så der er en vis kunstnerisk frihed;-)
+          </p>
+
+          <p>
+            <strong> Samtykke</strong><br />
+            Det er ikke tilladt at uploade fotografier af personer, der ikke har
+            givet samtykke til offentliggørelsen af ​​billedet. Billeder af
+            personer i private eller pinlige situationer, uanset om de er
+            fotograferet på et offentligt sted, er ikke tilladt.
+          </p>
+
+          <p>
+            <strong> Juridiske aspekter</strong>
+            Arrangørerne forbeholder sig retten til at diskvalificere enhver
+            deltager, der overtræder disse betingelser. Arrangørerne påtager sig
+            intet ansvar for tab, skade eller personskade, der måtte opstå som
+            følge af deltagelse i konkurrencen eller brug af præmier. Deltagerne
+            fritager arrangørerne for ethvert krav, søgsmål eller ansvar i
+            forbindelse med deres deltagelse i konkurrencen.
+          </p>
+          <p>
+            <strong> Antal bidrag</strong>
+            Du kan deltage i konkurrencen med i alt fem bidrag.
+          </p>
+          <p>
+            <strong> Brugsrettigheder</strong>
+            Ved at indsende et eller flere billeder og dermed deltage i
+            konkurrencen accepterer du, at billedet må bruges til promovering af
+            fotokonkurrencen og muligvis i fysiske udstillingslokaler bagefter.
+            Arrangørerne vil kreditere deltagerne, hvor det er praktisk og
+            rimeligt muligt.
+          </p>
+          <p>
+            <strong>Ophavsret</strong>
+            Du skal være fotografen af de indsendte instant fotos samt have
+            rettighederne til at offentliggøre dem. Billederne skal være fri for
+            tredjepartsrettigheder. Som deltager beholder du ophavsretten til de
+            indsendte fotos. Ved at indsende fotos til konkurrencen giver du
+            arrangørerne en ikke-eksklusiv licens til at bruge, reproducere og
+            offentliggøre de indsendte fotos i forbindelse med promoveringen af
+            ​​konkurrencen, herunder på sociale medieplatforme, hjemmesider og i
+            trykte materialer. Arrangørerne vil kreditere deltagerne, hvor det
+            er praktisk og rimeligt.
+          </p>
+          <p>
+            <strong> Annoncering af vinderne</strong>
+            Vinderne af konkurrencen vil blive annonceret på Instant Ugens
+            officielle hjemmeside og/eller sociale medieplatforme. Ved at
+            deltage i konkurrencen giver du samtykke til offentliggørelse af
+            navn samt at indsendte fotos bruges til markedsføring af
+            konkurrencen.
+          </p>
+        </div>
+        <form method="dialog" class="dialog-footer">
+          <button class="btn-submit dialog-ok">Forstået</button>
+        </form>
+      </dialog>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- Logo kolonne -->
+        <div class="footer-logo">
+          <img src="img/opdateret-logo.png" alt="Instant Ugen logo" />
+        </div>
+
+        <!-- Navigation -->
+        <div class="footer-col">
+          <h3>Navigation:</h3>
+          <ul>
+            <li><a href="index.html">Forside</a></li>
+            <li><a href="om-os.html">OM OS</a></li>
+            <li><a href="del-dine-instants.html">Del dine instants</a></li>
+          </ul>
+        </div>
+
+        <!-- Kontakt -->
+        <div class="footer-col">
+          <h3>Kontakt:</h3>
+          <p><a href="tel:+4512345678">+45 12345678</a></p>
+          <p><a href="mailto:instantugen@mail.dk">instantugen@mail.dk</a></p>
+        </div>
+
+        <!-- Adresse -->
+        <div class="footer-col">
+          <h3>Adresse:</h3>
+          <p class="address-line">Møllebakken 27, 3.Th</p>
+          <p class="address-line">2400 København NV</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
